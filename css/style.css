@@ -189,6 +189,15 @@ button {
 .quote {
   margin-top: 20px;
 }
+.services .list-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+  left: -20px;
+}
 
 .quote p {
   font-size: 1rem;
