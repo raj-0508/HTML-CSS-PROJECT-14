@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
   background-color: #f9f7f5;
   color: #333;
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative ;
 }
 
 header {
@@ -58,6 +62,7 @@ nav a.active {
 .menu {
   font-size: 3rem;
   display: none;
+  color: #000;
 }
 
 .main-container {
@@ -204,7 +209,7 @@ button {
 
 .services img {
   align-self: flex-end;
-  max-height: 150px;
+  max-height: 130px;
 }
 
 .social-media {
@@ -220,7 +225,7 @@ button {
 
 /* Media Queries */
 
-@media screen and (max-width: 1127px) {
+@media screen and (max-width: 768px) {
   header {
     margin: 40px 40px;
     width: 85%;
@@ -257,9 +262,6 @@ button {
   .services img {
   align-self: flex-end;
   }
-}
-
-@media screen and (max-width: 768px) {
   .crea {
     font-size: 5rem;
     align-self: self-start;
@@ -290,6 +292,51 @@ button {
   .services {
     flex-direction: row;
     justify-content: space-between;
+  }
+  nav .line {
+    display: none;
+  }
+
+  .crea {
+    font-size: 5rem;
+    align-self: self-start;
+  }
+  .tivity {
+    display: flex;
+    margin-left: 25%;
+  }
+  .tiv {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .ingredienet {
+    font-size: 1.25rem;
+    align-self: flex-end;
+    width: 80px;
+  }
+  button {
+    padding: 15px 45px;
+    margin-top: 25px;
+    cursor: pointer;
+    align-self: flex-end;
+    transform: translateX(45%);
+  }
+  .services img {
+    align-self: flex-end;
+    max-height: 100px;
+  }
+  .services .list-item {
+    font-size: 0.9rem;
+    margin-left: 20px;
+  }
+  .social-media a {
+    font-size: 1.2rem;
+  }
+  .right-section {
+    padding: 20px;
+  }
+  .social-media {
+    right: 5px;
   }
 }
 
