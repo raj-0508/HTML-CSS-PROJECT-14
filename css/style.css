@@ -65,18 +65,12 @@ nav a.active {
   color: #000;
 }
 
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow-x: hidden;
-}
 
 .main-container {
   display: flex;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -305,6 +299,42 @@ button {
   nav .line {
     display: none;
   }
+  header {
+    margin: 40px 40px;
+    width: 85%;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: 50%;
+  }  
+  .social-media {
+  top: 4%;
+  right: 10px;
+  gap: 30px;
+  }
+  .services {
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .services .list {
+  gap: 20px;
+  }
+  .quote {
+  margin-top: 0px;
+  }
+  .services img {
+  align-self: flex-end;
+  }
 
   .crea {
     font-size: 5rem;
@@ -330,23 +360,7 @@ button {
     align-self: flex-end;
     transform: translateX(45%);
   }
-  .services img {
-    align-self: flex-end;
-    max-height: 100px;
-  }
-  .services .list-item {
-    font-size: 0.9rem;
-    margin-left: 20px;
-  }
-  .social-media a {
-    font-size: 1.2rem;
-  }
-  .right-section {
-    padding: 20px;
-  }
-  .social-media {
-    right: 5px;
-  }
+  
 }
 
 @media screen and (max-width: 480px) {
