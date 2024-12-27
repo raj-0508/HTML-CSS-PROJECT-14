@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f7f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  width: 85%;
+  margin: 3rem 6rem;
+}
+
+.logo {
+  z-index: 1;
+}
+
+.logo img {
+  max-width: 130px;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #999;
+  font-size: 18px;
+}
+
+nav a.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.line {
+  width: 20rem;
+  height: 2px;
+  background-color: #000000;
+  align-self: center;
+}
+
+.menu {
+  font-size: 3rem;
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.crea {
+  font-size: 7rem;
+  font-weight: 700;
+  align-self: self-start;
+}
+
+.tivity {
+  display: flex;
+  margin-left: 40%;
+}
+
+.tiv {
+  font-size: 7rem;
+  line-height: 1;
+  color: #000;
+  font-weight: 700;
+}
+
+.ingredienet {
+  font-size: 2rem;
+  color: #888;
+  margin-top: 20px;
+  align-self: flex-end;
+  width: 80px;
+}
+
+button {
+  display: inline-block;
+  padding: 20px 80px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 25px;
+  cursor: pointer;
+  transform: translateX(90%);
+}
+
+.left-section {
+  width: 35%;
+  position: relative;
+}
+
+.left-section img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+  top: 0;
+}
+
+.right-section {
+  width: 65%;
+  background-color: #f9f7f5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.services .list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+}
+
+.services .list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #666;
+  gap: 10px;
+  position: relative;
+}
+
+.services .list-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+  left: -20px;
+}
+
+.services .list-item.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.quote {
+  margin-top: 20px;
+}
+
+.quote p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 800;
+}
+
+.quote span {
+  color: #000;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.services img {
+  align-self: flex-end;
+  max-height: 150px;
+}
+
+.social-media {
+  position: absolute;
+  top: 12%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 100%;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1127px) {
+  header {
+    margin: 40px 40px;
+    width: 85%;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: 50%;
+  }  
+  .social-media {
+  top: 4%;
+  right: 10px;
+  gap: 30px;
+  }
+  .services {
+  flex-direction: column;
+  justify-content: center;
+  }
+  .services .list {
+  gap: 20px;
+  }
+  .quote {
+  margin-top: 0px;
+  }
+  .services img {
+  align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crea {
+    font-size: 5rem;
+    align-self: self-start;
+  }
+  .tivity {
+    display: flex;
+    margin-left: 25%;
+  }
+  .tiv {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .ingredienet {
+    font-size: 1.5rem;
+    align-self: flex-end;
+    width: 80px;
+  }
+  button {
+    padding: 20px 60px;
+    margin-top: 25px;
+    cursor: pointer;
+    align-self: flex-end;
+    transform: translateX(45%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1127px) {
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services .list-item {
+    font-size: 0.9rem;
+    margin-left: 20px;
+  }
+  .social-media a {
+    font-size: 1.2rem;
+  }
+  .right-section {
+    padding: 20px;
+  }
+  .social-media {
+    right: 5px;
+  }
+  .crea {
+    font-size: 4rem;
+    align-self: self-start;
+  }
+  .tivity {
+    display: flex;
+    margin-left: 0%;
+  }
+  .tiv {
+    font-size: 4.2rem;
+    line-height: 1;
+  }
+  .ingredienet {
+    font-size: 1.2rem;
+    align-self: flex-end;
+    width: 80px;
+  }
+  button {
+    padding: 15px 45px;
+    margin-top: 25px;
+    transform: translateX(0%);
+    align-self: flex-start;
+  }
+} 
